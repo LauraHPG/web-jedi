@@ -77,7 +77,7 @@ var checkPassword = e =>{
 
     let user = users.find(u => u.username === username);
     if(user){
-      if (password === user.password) window.location = 'html/shelves.html';
+      if (password === user.password) window.location = 'shelves.html';
       else alert("wrong password")
     }
     else alert("user does not exist");
@@ -105,8 +105,8 @@ $(window).on('load', async() => {
       elmnt.scrollIntoView(); 
     }) 
 
-    $("#shelves").on('click', async () => window.location = 'html/shelves.html');
-    $("#myshelf").on('click', async () => window.location = 'html/myshelf.html');
+    $("#shelves").on('click', async () => window.location = 'shelves.html');
+    $("#myshelf").on('click', async () => window.location = 'myshelf.html');
 
     
 });
