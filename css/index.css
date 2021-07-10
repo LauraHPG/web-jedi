@@ -45,7 +45,6 @@ main{
     background: rgba(0,0,0,.5);
     box-shadow: 0 15px 25px rgba(0,0,0,.4);
     border-radius: 10px;
-    min-height: 50vh;
 }
 
 .login-box h2 {
@@ -95,7 +94,7 @@ main{
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
-    margin-top: 10px;
+    margin-top: 20%;
     margin-bottom: 10px;
     letter-spacing: 4px;    
     border-radius: 5px;
