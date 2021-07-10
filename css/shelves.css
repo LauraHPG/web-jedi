@@ -1,0 +1,25 @@
+nav{
+    min-height: 60px;
+    background: darkslategrey;
+    color: ivory;
+}
+
+main{
+    min-height: calc(100vh - 120px);
+    background: ivory;
+}
+
+footer{
+    min-height: 60px;
+    background: darkslategrey;
+}
+
+a{
+    text-decoration: none;
+    color: ivory;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 240, 0.664);
+}
