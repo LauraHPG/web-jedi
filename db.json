@@ -22,12 +22,68 @@
     }
       
     ],
-    "books":[
+    "book-categories":[
         {
-            "title": "The Catcher in the Rye",
-            "img":"https://cdn2.penguin.com.au/covers/original/9780241984758.jpg",
-            "synopsis": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school. Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable."
+            "name": "classics",
+            "books":[
+                {
+                    "title": "The Catcher in the Rye",
+                    "img":"https://cdn2.penguin.com.au/covers/original/9780241984758.jpg",
+                    "synopsis": "The novel details two days in the life of 16-year-old Holden Caulfield after he has been expelled from prep school. Confused and disillusioned, Holden searches for truth and rails against the “phoniness” of the adult world. He ends up exhausted and emotionally unstable."
+                },
+                {
+                    "title": "Pride and Prejudice",
+                    "img":"https://www.dailylit.com/media/images/covers/170.jpg",
+                    "synopsis": "Love story where an independent and intelligent woman is loved by a self-reserved and powerful man. It describes the provincial life of the British aristocracy at the beginning of the XIX century. The novel’s principal themes are love and the possibility to be the master of one’s own life."
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "img":"https://th.bing.com/th/id/R.f3ab1a1dbc75f2296d9030a5d46e8e4a?rik=Vxjm%2beA3I7ceIg&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1148926%2fimages%2fo-CLASSIC-BOOKS-ORIGINAL-COVERS-facebook.jpg&ehk=sG%2f7MWcpSaqAGalT4Q%2b%2bSkw0bd3WhYDOdX1X9dfZK5U%3d&risl=&pid=ImgRaw",
+                    "synopsis": "It is set in the mid-1930s in the small town of Maycomb, Alabama. It is narrated by Scout Finch, a six-year-old tomboy who lives with her lawyer father Atticus and her ten-year-old brother Jem. During the novel Scout, Jem and their friend Dill try to make their reclusive neighbour Boo Radley leave his house. Boo has not been seen in Maycomb since he was a teenager."
+                },
+                {
+                    "title": "Alice's Adventures in Wonderland",
+                    "img":"https://d3ui957tjb5bqd.cloudfront.net/uploads/2018/08/23061058/Classic-Book-Covers-Redesigned-7.jpg",
+                    "synopsis": "It is about a young girl, Alice, who is sitting along the bank of a river when she notices a rabbit in clothing run by. The rabbit says he is late and jumps down a hole through which Alice follows. This is where her adventure begins with many bizarre happenings and meetings of different people. She comes upon locked doors that she unopens with a key she finds. Strange things such as drinking a potion shrinks her, and eating a piece of cake grows her back."
+                }
+            ]
+        },
+        {
+            "name": "adventure",
+            "books":[
+                {
+                    "title": "1984",
+                    "img":"https://shortlist.imgix.net/app/uploads/2017/01/24135123/the-20-best-dystopian-novels.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress",
+                    "synopsis": "It follows Winston Smith, who attempts to fights back against a totalitarian Party that rules Oceania and his entire life. It is a dystopian novel that tells the story of Winston Smith and warns of the dangers of a totalitarian government that rules through fear, surveillance, propaganda, and brainwashing."
+                },
+                {
+                    "title": "Fahrenheit 451",
+                    "img":"https://i.pinimg.com/originals/30/92/71/309271f03dae4fbee9794e94376bc560.jpg",
+                    "synopsis": "It is set in a dystopian society that burns books in order to control dangerous ideas and unhappy concepts. The novel tells the story of Guy Montag, a fireman who questions the book-burning policy and undergoes extraordinary suffering and transformation as a result."
+                },
+                {
+                    "title": "The Handmaid's Tale",
+                    "img":"https://th.bing.com/th/id/R.0f7cdf49f9ea4ccfa5bce5c1217bfbb2?rik=p%2bUNFHxGT1Q02A&pid=ImgRaw",
+                    "synopsis": "The Handmaid's Tale is the story of life in the dystopia of Gilead, a totalitarian society in what was the United States. Gilead is ruled by a fundamentalist regime that treats women as property of the state, and is faced with environmental disasters and a plummeting birth rate."
+                }
+            ]
+        },
+        {
+            "name": "sci-fi",
+            "books":[
+                {
+                    "title": "Dune",
+                    "img": "https://th.bing.com/th/id/R.9692a9e441bd49c374947ac7b2333ae9?rik=D2tn1Ecff4A6uQ&pid=ImgRaw",
+                    "synopsis": "It tells the story of a future feudal society spread across the planets, and one noble family given the task of governing a planet containing one of the most valuable substances in the world known only as “Spice.”"
+                },
+                {
+                    "title": "The Left Hand of Darkness",
+                    "img":"https://img1.od-cdn.com/ImageType-400/1523-1/6E5/360/5A/%7B6E53605A-84BB-4D6F-976D-D5525671BDEF%7DImg400.jpg",
+                    "synopsis": "The novel takes place on the planet Gethen or as also it is called Winter, which main peculiarity is cold climate. The main feature of the inhabitants of this planet is a sequential hermaphroditism. The adult inhabitant of Gethen has a sexual cycle with the length of 1 month or 26 days. Within 21-22 days, the inhabitant is sterile, for another time, he is in a phase of the fertility. If during this time he finds a sexual partner, one of the partners will plays a male role and the other will play a female one. If the conception happens, the effect of hormones is stored for future mothers during the pregnancy."
+                }
+            ]
         }
+        
 
     ]
   }
