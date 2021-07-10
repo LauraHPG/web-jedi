@@ -87,21 +87,20 @@ main{
     font-size: 12px;
 }
 
-.login-box form a {
+.login-box form button {
     padding: 10px 20px;
     color: ivory;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     transition: .5s;
-    margin-top: 20%;
-    margin-bottom: 20%;
     letter-spacing: 4px;    
     border-radius: 5px;
     border: 1px solid ivory;
+    background: none;
 }
 
-.login-box a:hover {
+.login-box button:hover {
     background: ivory;
     color: darkslategrey;
     border-radius: 5px;
@@ -126,6 +125,9 @@ main{
     border-radius: 5px;
 }
 
+input#username{
+    background: none;
+}
 
 
 

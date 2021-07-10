@@ -1,8 +1,8 @@
 var loggedIn = false;
+const url = "https://web-jedi-bookshelves.herokuapp.com/users";
 
 var animations =  () =>{
     
-    $("#login-form").delay(2000).fadeIn();
     document.getElementById("welcome").animate([
         { transform: 'translateX(-50vw)' },
         { transform: 'translateX(0px)' }
@@ -12,7 +12,7 @@ var animations =  () =>{
       });
 
     document.getElementById("title").animate([
-        { transform: 'translateX(200vw)' },
+        { transform: 'translateX(50vw)' },
         { transform: 'translateX(0px)' }
       ], {
         duration: 700,
@@ -54,7 +54,7 @@ var animations =  () =>{
         iterations: 1
       });
 
-      document.getElementById("login-form").animate([
+      document.getElementById("login-box").animate([
         { opacity: 0 },
         { opacity: 0 },
         { opacity: 0 },
@@ -69,11 +69,44 @@ var animations =  () =>{
       });
 }
 
-$(window).on('load', () => {       
-    animations();  
+var checkPassword = e =>{
+    e.preventDefault();
 
-    $('#move-to-login-btn').on("click", async () => {
+    var username = $('#username').val();
+    var password = $('#password').val();
+
+    let user = users.find(u => u.username === username);
+    if(user){
+      if (password === user.password) window.location = 'html/shelves.html';
+      else alert("wrong password")
+    }
+    else alert("user does not exist");
+    
+    return;
+
+}
+
+window.addEventListener("load", () => {
+  
+});
+
+
+$(window).on('load', async() => {       
+    animations(); 
+
+    try {users = (await axios.get(`${url}`)).data;}
+    catch (error) {console.log(err)}
+
+    document.getElementById("login-box")
+      .addEventListener('submit', checkPassword);
+
+    $('#move-to-login-btn').on("click", () => {
       var elmnt = document.getElementById("login");
       elmnt.scrollIntoView(); 
     }) 
+
+    $("#shelves").on('click', async () => window.location = 'html/shelves.html');
+    $("#myshelf").on('click', async () => window.location = 'html/myshelf.html');
+
+    
 });
