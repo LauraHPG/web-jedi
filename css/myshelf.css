@@ -13,3 +13,63 @@ footer{
     min-height: 60px;
     background: darkslategrey;
 }
+
+a{
+    text-decoration: none;
+    color: ivory;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 240, 0.664);
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+
+.search-box {  
+    background: rgba(0,0,0,.25);
+    border-radius:  3px;
+    border: 1px solid ivory;
+    height: 40px;
+}
+    
+.search-box input {    
+    padding: 10px 10px;
+    float: left;
+    border: none;
+    transition: .5;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+    height: 38px;
+    width: 300px;
+    max-width: 300px;
+}
+
+.search-box input:focus{
+    outline: none;
+    background: rgba(0,0,0,.2);
+}
+
+.search-box button {
+    border: 0;
+    padding: 0;
+    height: 39px;
+    width: 120px;
+    color: ivory;
+    transition: .5s;
+    background: transparent;
+    border-left: 1px solid ivory;
+    border-radius: 0 3px 3px 0;
+}  
+
+.search-box button:hover {
+    background:ivory;
+    color:darkslategrey;
+}
+
+.search-box button:focus {
+    outline: 0;
+}

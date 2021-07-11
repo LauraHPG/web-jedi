@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 nav{
     min-height: 60px;
     background: darkslategrey;
@@ -22,4 +26,81 @@ a{
 a:hover{
     text-decoration: none;
     color: rgba(255, 255, 240, 0.664);
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+}
+
+.search-box {  
+    background: rgba(0,0,0,.25);
+    border-radius:  3px;
+    border: 1px solid ivory;
+    height: 40px;
+}
+    
+.search-box input {    
+    padding: 10px 10px;
+    float: left;
+    border: none;
+    transition: .5;
+    background: transparent;
+    border-radius: 3px 0 0 3px;
+    height: 38px;
+    width: 300px;
+    max-width: 300px;
+}
+
+.search-box input:focus{
+    outline: none;
+    background: rgba(0,0,0,.2);
+}
+
+.search-box button {
+    border: 0;
+    padding: 0;
+    height: 39px;
+    width: 120px;
+    color: ivory;
+    transition: .5s;
+    background: transparent;
+    border-left: 1px solid ivory;
+    border-radius: 0 3px 3px 0;
+}  
+
+.search-box button:hover {
+    background:ivory;
+    color:darkslategrey;
+}
+
+.search-box button:focus {
+    outline: 0;
+}
+
+.row h2{
+    margin: 2vh 1vw;    
+}
+
+.page-name{
+    margin: 3vh 3vw;
+    margin-bottom: 0;
+    border-bottom: 2px solid darkslategrey;
+    border-radius: 3px 3px 0px 0px;
+    background:#E5E5D6;
+}
+
+.info{    
+    margin: 0;
+    margin-left: 3vw;
+    padding-right: 0%;
+    border-bottom: 2px solid darkslategrey;
+    border-radius: 3px 3px 0px 0px;
+    background:#E5E5D6;
+}
+
+.book-cards{
+    margin: 0;    
+    margin-right: 3vw;
+    padding-left: 0;
 }
