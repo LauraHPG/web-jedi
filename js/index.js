@@ -12,7 +12,7 @@ var animations =  () =>{
       });
 
     document.getElementById("title").animate([
-        { transform: 'translateX(50vw)' },
+        { transform: 'translateX(100vw)' },
         { transform: 'translateX(0px)' }
       ], {
         duration: 700,
@@ -30,17 +30,17 @@ var animations =  () =>{
         iterations: 1
       });
 
-      document.getElementById("myshelf").animate([
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 100 }
-      ], {
-        duration: 700,
-        iterations: 1
-      });
+      // document.getElementById("myshelf").animate([
+      //   { opacity: 0 },
+      //   { opacity: 0 },
+      //   { opacity: 0 },
+      //   { opacity: 0 },
+      //   { opacity: 0 },
+      //   { opacity: 100 }
+      // ], {
+      //   duration: 700,
+      //   iterations: 1
+      // });
 
       document.getElementById("move-to-login-btn").animate([
         { opacity: 0 },
@@ -77,7 +77,7 @@ var checkPassword = e =>{
 
     let user = users.find(u => u.username === username);
     if(user){
-      if (password === user.password) window.location = 'shelves.html';
+      if (password === user.password) window.location = 'myshelf.html';
       else alert("wrong password")
     }
     else alert("user does not exist");
@@ -85,11 +85,6 @@ var checkPassword = e =>{
     return;
 
 }
-
-window.addEventListener("load", () => {
-  
-});
-
 
 $(window).on('load', async() => {       
     animations(); 
