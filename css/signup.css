@@ -7,7 +7,7 @@ main{
     align-items: center;    
 }
 
-#login{
+#signup{
     min-height: 100vh;
     background-color: #5c4054;
     align-items: center;
@@ -39,25 +39,25 @@ main{
     }
 }
 
-.login-box {
+.signup-box {
     padding: 10%;
     background: rgba(0,0,0,.5);
     box-shadow: 0 15px 25px rgba(0,0,0,.4);
     border-radius: 10px;
 }
 
-.login-box h2 {
+.signup-box h2 {
     margin: 0 0 30px;
     padding: 0;
     color: ivory;
     text-align: center;
 }
 
-.login-box .user-box {
+.signup-box .user-box {
     position: relative;
 }
 
-.login-box .user-box input {
+.signup-box .user-box input {
     width: 100%;
     padding: 10px 0;
     color: ivory;
@@ -67,7 +67,7 @@ main{
     outline: none;
     background: none;
 }
-.login-box .user-box label {
+.signup-box .user-box label {
     position: absolute;
     top:0;
     left: 0;
@@ -78,15 +78,15 @@ main{
     transition: .5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.signup-box .user-box input:focus ~ label,
+.signup-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
     color: rgba(255, 255, 240, 0.712);
     font-size: 12px;
 }
 
-.login-box form button {
+.signup-box form button {
     padding: 10px 20px;
     color: ivory;
     font-size: 16px;
@@ -99,20 +99,20 @@ main{
     background: none;
 }
 
-.login-box button:hover {
+.signup-box button:hover {
     background: ivory;
     color: #5c4054;
     border-radius: 5px;
 }
 
-.login-box a{
+.signup-box a{
     text-decoration: none;
     color: ivory;
     transition: .5;
     margin-top: 0;
 }
 
-.login-box a:hover{
+.signup-box a:hover{
     text-decoration: none;
     color: rgba(255, 255, 240, 0.712);
 }

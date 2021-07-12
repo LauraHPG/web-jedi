@@ -30,18 +30,6 @@ var animations =  () =>{
         iterations: 1
       });
 
-      // document.getElementById("myshelf").animate([
-      //   { opacity: 0 },
-      //   { opacity: 0 },
-      //   { opacity: 0 },
-      //   { opacity: 0 },
-      //   { opacity: 0 },
-      //   { opacity: 100 }
-      // ], {
-      //   duration: 700,
-      //   iterations: 1
-      // });
-
       document.getElementById("move-to-login-btn").animate([
         { opacity: 0 },
         { opacity: 0 },

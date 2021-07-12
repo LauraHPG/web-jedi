@@ -16,6 +16,7 @@
     <script src="js/shelves.js"></script>
 </head>
 <body>
+
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -32,32 +33,23 @@
                 <a href="myshelf.html">MyShelf</a>
               </li>
             </ul>
-            <form class="search-box" action="">
-              <input type="search" placeholder="Search book title...">
-              <button type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-
+    
     <main>
-      <div class="row">
-        <!-- <div class="row page-name">
-          <h2>Shelves</h2>
-        </div>
-        <div class="row info">
-          <div class="col-md-4 category-list">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-            </ul>
+      
+      <div class="shelf-box row">   
+          <div class="sidebar d-none d-md-block col-md-3">
+            <h3>Categories</h3>
+            <div class="list-group" id="list-tab" role="tablist"></div>
           </div>
-          <div class="col book-cards">
-            hola
+
+          <div class="book-cards col">
+            <div class="tab-content" id="nav-tabContent"></div>
           </div>
-        </div> -->
-        
+
       </div>
     </main>
 
