@@ -24,7 +24,7 @@
     ],
     "book-categories":[
         {
-            "name": "classics",
+            "name": "Classics",
             "books":[
                 {
                     "title": "The Catcher in the Rye",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "name": "dystopian",
+            "name": "Dystopian",
             "books":[
                 {
                     "title": "1984",
@@ -69,7 +69,7 @@
             ]
         },
         {
-            "name": "sci-fi",
+            "name": "Sci-fi",
             "books":[
                 {
                     "title": "Dune",
