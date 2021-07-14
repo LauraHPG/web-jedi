@@ -5,7 +5,7 @@ html, body{
 
 nav{
     min-height: 60px;
-    background: darkslategrey;
+    background: #5c4054;
     color: ivory;
 }
 
@@ -15,7 +15,7 @@ main{
 
 footer{
     min-height: 60px;
-    background: darkslategrey;
+    background: #5c4054;
 }
 
 a{
@@ -33,63 +33,18 @@ a:hover{
     width: 40px;
 }
 
-.search-box {  
-    background: rgba(0,0,0,.25);
-    border-radius:  3px;
-    border: 1px solid ivory;
-    height: 40px;
-}
-    
-.search-box input {    
-    padding: 10px 10px;
-    float: left;
-    border: none;
-    transition: .5;
-    background: transparent;
-    border-radius: 3px 0 0 3px;
-    height: 38px;
-    width: 300px;
-    max-width: 300px;
-}
-
-.search-box input:focus{
-    outline: none;
-    background: rgba(0,0,0,.2);
-}
-
-.search-box button {
-    border: 0;
-    padding: 0;
-    height: 39px;
-    width: 120px;
-    color: ivory;
-    transition: .5s;
-    background: transparent;
-    border-left: 1px solid ivory;
-    border-radius: 0 3px 3px 0;
-}  
-
-.search-box button:hover {
-    background:ivory;
-    color:darkslategrey;
-}
-
-.search-box button:focus {
-    outline: 0;
-}
 
 .shelf-box{
     margin: 2.5vh 1vw;
     padding: 2.5vh 1vw;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.219);
 }
 
 .sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: calc(100vh - 120px);
-    padding: 2vh 0;
+    height: 100vh;
+    border-right: 2px solid #5c4054;
 }
 
 .sidebar ul{
@@ -99,13 +54,12 @@ a:hover{
 }
 
 .sidebar li{
-    border-bottom: 2px solid darkslategrey;
+    border-bottom: 2px solid #5c4054;
     padding: 1vh 0;
 }
 
 .book-cards{
     padding: 2vh 2vw;
-    border-left: 2px solid darkslategrey;
 }
 
 .list-group{
@@ -113,9 +67,9 @@ a:hover{
 }
 
 .list-group-item{
-    background-color: transparent;
+    background: transparent;
     border: 1px solid rgba(0,0,0,0);
-    border-bottom: 2px solid darkslategrey;
+    border-bottom: 2px solid #5c4054;
 }
 
 .list-group-item:hover, 
@@ -125,16 +79,20 @@ a:hover{
 }
 
 .list-group-item:hover{
-    background: rgba(47, 79, 79, 0.603);
+    background: #5c405480;
+    
 }
 
 .list-group-item.active{
-    background: darkslategrey;
+    background: #5c4054;
 }
 
 
 .card{
     text-align: center;
+    background: #5c40542a;
+    border: 1px solid #5c405480;
+    margin: 1vh 0;
 }
 .book-cover{
     padding-top: 3%;
@@ -157,3 +115,64 @@ a:hover{
 .card-img-top{
     height:70%;
 }
+
+.btn-secondary{
+    background: #5c4054;
+    color: ivory;
+    transition: .25;
+    border-color: #5c4054;
+    
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus{
+    background: ivory;
+    color: #5c4054;
+    border-color: #5c4054;
+    box-shadow: none;
+}
+
+
+.book-cards h2::first-letter{
+    text-transform: uppercase;
+}
+
+.accordion-body{
+    background: ivory;
+}
+
+.accordion-flush .accordion-item .accordion-button{
+    background: #5c4054;
+    color: ivory;
+    border: 1px solid #5c4054;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+
+.accordion-button:hover,
+.accordion-button:active,
+.accordion-button:focus{
+    background: ivory;
+    border-color: #5c4054;
+    color: #5c4054;
+    box-shadow: none;
+}
+
+
+.navbar-toggler{
+    border-color: ivory;
+    color: ivory;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+button::first-letter{
+    text-transform: uppercase;
+}
+
