@@ -16,8 +16,7 @@ const load = (book,cat) =>{
 $(window).on('load', async() => {  
     try {
         var categories = (await axios.get(`${url}`)).data;
-        console.log(categories)
-        load(categories[0].books[0], categories[0])
+        load(categories[0].books[0], categories[0]);
     }
     catch (error) {console.log(err)}
 
@@ -31,7 +30,6 @@ $(window).on('load', async() => {
                     book = categories[i].books[j];
                     cat = categories[i];
                     found = true;
-                    console.log(book)
                     break;
                 }                
             }
