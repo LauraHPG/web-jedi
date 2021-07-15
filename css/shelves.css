@@ -1,5 +1,5 @@
 html, body{
-      
+    overflow-x: hidden;
     background: ivory;
 }
 
@@ -16,6 +16,18 @@ main{
 footer{
     min-height: 60px;
     background: #5c4054;
+    text-align: center;
+}
+
+footer p{
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+
+.social-media {
+    font-size: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 a{
@@ -94,6 +106,7 @@ a:hover{
     border: 1px solid #5c405480;
     margin: 1vh 0;
 }
+
 .book-cover{
     padding-top: 3%;
     padding-left: 3%;
@@ -108,20 +121,13 @@ a:hover{
     margin: 5%;
 }
 
-.card-title{
-    height: 70px;
-}
-
-.card-img-top{
-    height:70%;
-}
 
 .btn-secondary{
     background: #5c4054;
     color: ivory;
     transition: .25;
     border-color: #5c4054;
-    
+    box-shadow: none;
 }
 
 .btn-secondary:hover,
@@ -129,6 +135,18 @@ a:hover{
 .btn-secondary:focus{
     background: ivory;
     color: #5c4054;
+    border-color: #5c4054;
+    box-shadow: none;
+}
+
+.addBook .btn-secondary{
+    border-color: ivory;
+    box-shadow: none;
+}
+
+.addBook .btn-secondary:hover,
+.addBook .btn-secondary:active,
+.addBook .btn-secondary:focus{
     border-color: #5c4054;
     box-shadow: none;
 }
@@ -176,3 +194,35 @@ button::first-letter{
     text-transform: uppercase;
 }
 
+.addBook {
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+    font-size: 30px;
+    color: #fff;
+}
+
+.addBook .dropdown-menu{
+    padding: 15%;
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    margin: 4px 0;
+}
+
+footer p{
+    color: ivory;
+}
+
+.card-body{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body button{
+    align-self: flex-end;
+}
