@@ -64,7 +64,6 @@ var checkPassword = async e =>{
       let id = users.length +1;
       axios.post(`${url}`, { "id": id, "username": username, "password": password} )
       .then( response => {
-          console.log(response.data) 
           window.location = 'shelves.html'; 
       } )  
       .catch( err => { 
