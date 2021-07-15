@@ -38,6 +38,9 @@ $(window).on('load', async() => {
             if (found) break;
         }
         if(found) load( book, cat );
+        else{
+            alert(`The book does not exist`)
+        }
         return;
     });
 
