@@ -18,17 +18,6 @@ var animations =  () =>{
         duration: 700,
         iterations: 1
       });
-      document.getElementById("shelves").animate([
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 100 }
-      ], {
-        duration: 700,
-        iterations: 1
-      });
 
       document.getElementById("move-to-signup-btn").animate([
         { opacity: 0 },
@@ -76,7 +65,7 @@ var checkPassword = async e =>{
       axios.post(`${url}`, { "id": id, "username": username, "password": password} )
       .then( response => {
           console.log(response.data) 
-          window.location = 'myshelf.html'; 
+          window.location = 'shelves.html'; 
       } )  
       .catch( err => { 
           console.log(err)  
@@ -100,7 +89,6 @@ $(window).on('load', async() => {
     }) 
 
     $("#shelves").on('click', async () => window.location = 'shelves.html');
-    $("#myshelf").on('click', async () => window.location = 'myshelf.html');
 
     
 });

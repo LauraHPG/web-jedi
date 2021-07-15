@@ -1,5 +1,6 @@
 var loggedIn = false;
-const url = "https://web-jedi-bookshelves.herokuapp.com/users";
+const urlUsers = "https://web-jedi-bookshelves.herokuapp.com/users";
+const urlBooks = "https://web-jedi-bookshelves.herokuapp.com/book-categories"
 
 var animations =  () =>{
     
@@ -14,17 +15,6 @@ var animations =  () =>{
     document.getElementById("title").animate([
         { transform: 'translateX(100vw)' },
         { transform: 'translateX(0px)' }
-      ], {
-        duration: 700,
-        iterations: 1
-      });
-      document.getElementById("shelves").animate([
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 0 },
-        { opacity: 100 }
       ], {
         duration: 700,
         iterations: 1
@@ -60,24 +50,24 @@ var animations =  () =>{
 var checkPassword = e =>{
     e.preventDefault();
 
-    var username = $('#username').val();
-    var password = $('#password').val();
+    let username = $('#l-username').val();
+    let password = $('#l-password').val();
 
     let user = users.find(u => u.username === username);
     if(user){
-      if (password === user.password) window.location = 'myshelf.html';
+      if (password === user.password) window.location = 'shelves.html';
       else alert("wrong password")
     }
     else alert("user does not exist");
     
     return;
-
 }
+
 
 $(window).on('load', async() => {       
     animations(); 
 
-    try {users = (await axios.get(`${url}`)).data;}
+    try {users = (await axios.get(`${urlUsers}`)).data;}
     catch (error) {console.log(err)}
 
     document.getElementById("login-box")
@@ -89,7 +79,6 @@ $(window).on('load', async() => {
     }) 
 
     $("#shelves").on('click', async () => window.location = 'shelves.html');
-    $("#myshelf").on('click', async () => window.location = 'myshelf.html');
 
     
 });

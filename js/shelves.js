@@ -1,16 +1,16 @@
 const url = "https://web-jedi-bookshelves.herokuapp.com/book-categories"
 
 const handleLoadCards = (categories) => {
+    //
     categories.map( cat => {
         $('#list-tab').append(
-            `<a class="list-group-item list-group-item-action" 
+            `<a class="list-group-item list-group-item-action ${cat.state}" 
                 id="list-${cat.name}-list" data-bs-toggle="list" href="#list-${cat.name}" 
                 role="tab" aria-controls="list-${cat.name}">
                 ${cat.name}
             </a>`)
         $('#nav-tabContent-md').append(
-            `<div class="tab-pane fade show" id="list-${cat.name}"
-            role="tabpanel" aria-labelledby="list-${cat.name}-list">
+            `<div class="tab-pane fade show ${cat.state}" id="list-${cat.name}" role="tabpanel" aria-labelledby="list-${cat.name}-list">
             <div class="row" id="box-${cat.name}"></div>
             </div>`)
         cat.books.map(book =>
@@ -18,7 +18,6 @@ const handleLoadCards = (categories) => {
                 `<div class="card col-sm-11 col-md-6 col-lg-4 col-xl-3  book-cover mx-sm-4 mx-md-0"> 
                     <img src="${book.img}" class="card-img-top" alt="${book.title}">
                     <div class="card-body">
-                        <h5 class="card-title">${book.title}</h5>
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Synopsis
                         </button>
@@ -49,7 +48,6 @@ const handleLoadCards = (categories) => {
                 `<div class="card col mx-2  book-cover"> 
                     <img src="${book.img}" class="card-img-top" alt="${book.title}">
                     <div class="card-body">
-                        <h5 class="card-title">${book.title}</h5>
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                              Synopsis
                         </button>
@@ -59,9 +57,9 @@ const handleLoadCards = (categories) => {
                     </div>
                 </div>`
 
-            ))});    
-        
-                
+            )
+        )
+    });   
 };
 
 $(window).on('load', async() => {  
